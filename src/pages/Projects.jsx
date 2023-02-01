@@ -1,4 +1,5 @@
 import projectsData from "../data/projects"
+import ProjectsList from "../components/ProjectsList"
 
 function Projects() {
   console.log(projectsData)
@@ -6,11 +7,7 @@ function Projects() {
     <>
       <h1>Projects</h1>
       <ul>
-        {projectsData.map(project =>
-          <li key={project.id}>
-            {project.title}
-          </li>
-        )}
+        <ProjectsList projects={projectsData}/>
       </ul>
     </>
   )
