@@ -12,9 +12,17 @@ function NavBar() {
           <ul>
               <li>
                   <Link
-                      to='/about'
+                      to='/projects'
                   >
-                      About
+                      Projects
+                  </Link>
+              </li>
+
+              <li>
+                  <Link
+                      to='/resume'
+                  >
+                      Resume
                   </Link>
               </li>
 
@@ -23,6 +31,14 @@ function NavBar() {
                       to='/contact'
                   >
                       Contact
+                  </Link>
+              </li>
+
+              <li>
+                  <Link
+                      to='/about'
+                  >
+                      About
                   </Link>
               </li>
           </ul>
