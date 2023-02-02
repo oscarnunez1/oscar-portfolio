@@ -7,7 +7,8 @@ function ProjectsList(props) {
         {props.projects.map(project =>
           <li key={project.id}>
               {project.title}
-              <ProjectPreview 
+              <ProjectPreview
+              project={project} 
               title={project.title}
               image={project.image} />
           </li>

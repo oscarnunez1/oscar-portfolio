@@ -4,20 +4,21 @@ function ProjectPreview (props) {
   return (
     <>
       <div>
-
-      <section>
-        <img 
-            src={props.image} 
-            alt={props.title}
-        />
-        <br/>
-        <Link to={`/projects/${props.title}`}>
-          <button>
-            Learn more
-          </button>
-        </Link>
-      </section>
-    </div>
+        <section>
+          <div>
+            <img 
+                src={props.project.image} 
+                alt={props.project.title}
+            />
+            <br/>
+            <Link to={`/projects/${props.project.title}`}>
+              <button>
+                Learn more
+              </button>
+            </Link>
+          </div>
+        </section>
+      </div>
     </>
   )
 }
