@@ -4,8 +4,8 @@ function ProjectsList(props) {
   return (
     <>
       <ul>
-        {props.projects.map(project =>
-          <li key={project.id}>
+        {props.projects.map((project, idx) =>
+          <li key={idx}>
               {project.title}
               <ProjectPreview
               project={project} 

@@ -5,7 +5,6 @@ const projectsData = [
     image: '/images/bitconnect-4.png',
     repositoryLink: "https://github.com/oscarnunez1/bitconnect-4.git",
     deploymentLink: "https://oscarnunez1-bitconnect-4.netlify.app/",
-    id: 1
   },
   {
     title: "Cityscape Social",
@@ -13,7 +12,6 @@ const projectsData = [
     image: "/images/cityscape-social.png",
     repositoryLink: "https://github.com/oscarnunez1/cityscape-social-app.git",
     deploymentLink: "https://cityscape-social.fly.dev/",
-    id: 2
   },
   {
     title: "Tic-Tac-Toe",
@@ -21,7 +19,6 @@ const projectsData = [
     image: "/images/tic-tac-toe.png",
     repositoryLink: "https://github.com/oscarnunez1/ttt-weekend.git",
     deploymentLink: "https://oscarnunez1-tic-tac-toe.netlify.app/",
-    id: 3
   }
 ]
 
