@@ -1,11 +1,13 @@
-import projects from ".data/projects"
+import projectsData from "../data/projects.js"
 
 function ProjectDetails() {
   return (
     <>
-      <h1>{projects[0].title}</h1>
-      <p>{projects[0].description}</p>
-      <img src={projects[0].image} alt="image"></img>
+      <h1>{projectsData[0].title}</h1>
+      <img src={projectsData[0].image} alt="btct-4"></img>
+      <p>{projectsData[0].description}</p>
     </>
   )
 }
+
+export default ProjectDetails
