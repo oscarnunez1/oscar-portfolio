@@ -10,6 +10,7 @@ import Projects from './pages/Projects'
 import NavBar from './components/NavBar'
 import ProjectDetails from './pages/ProjectDetails'
 import { Box } from '@mui/material'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path='projects/:projectDetails' element={<ProjectDetails />} />
         </Routes>
       </Box>
+      <Footer />
     </div>
   )
 }
