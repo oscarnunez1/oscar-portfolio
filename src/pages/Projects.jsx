@@ -33,7 +33,7 @@ function Projects() {
       <Box sx={{containerStyle, width: '90vw'}}>
         <Box sx={descriptionStyle}>
           <Typography variant="body1" component="p" align="center">
-            Check out some of the projects I've been working on. Click "Learn More" to see more details about each project.
+            Check out some of the projects I've worked on! Click "Learn More" to see more details about each project.
           </Typography>
         </Box>
         <div>{projectsList}</div>

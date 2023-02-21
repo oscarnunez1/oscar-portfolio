@@ -1,5 +1,5 @@
-import React from "react"
-import { Typography, Grid, Paper } from "@mui/material"
+import React from "react";
+import { Typography, Grid, Paper, Card, CardMedia, CardContent } from "@mui/material";
 
 function Home() {
   return (
@@ -11,13 +11,25 @@ function Home() {
           </Typography>
         </Grid>
         <Grid item>
-          <Paper elevation={16}>
-            <img id="home-image" src="https://i.imgur.com/VegtFwc.png" alt="Oscar Nunez"/>
-          </Paper>
+          <Card>
+            <CardMedia
+              id="home-image"
+              component="img"
+              width="100%"
+              height="auto"
+              image="https://i.imgur.com/VegtFwc.png"
+              alt="Oscar Nunez"
+            />
+            <CardContent>
+              <Typography variant="h4" component="h2" align="center">
+                Oscar Nunez
+              </Typography>
+            </CardContent>
+          </Card>
         </Grid>
       </Grid>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
