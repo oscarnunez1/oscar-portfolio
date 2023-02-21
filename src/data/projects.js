@@ -17,8 +17,8 @@ const projectsData = [
     title: "Tic-Tac-Toe",
     description: "Tic Tac Toe is a 2-player game played on a 3x3 grid. Players take turns marking a square with X or O, and the goal is to get 3 in a row horizontally, vertically, or diagonally. If all squares are filled and no one wins, it's a draw.",
     image: "/images/tic-tac-toe.png",
-    repositoryLink: "https://github.com/oscarnunez1/ttt-weekend.git",
-    deploymentLink: "https://oscarnunez1-tic-tac-toe.netlify.app/",
+    repositoryLink: "https://github.com/oscarnunez1/tic-tac-ts-lab",
+    deploymentLink: "https://tic-tac-toe-types.netlify.app/",
   },
   {
     title: "Pix",
