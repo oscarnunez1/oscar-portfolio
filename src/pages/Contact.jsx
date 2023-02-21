@@ -36,13 +36,13 @@ function Contact() {
           </Typography>
           <div>
             <Link href="mailto:oscar.nunezcaba@gmail.com" color="secondary" style={linkStyle}>
-              <EmailIcon />
+              <EmailIcon style={{ color: 'gold' }} />
             </Link>
             <Link href="https://www.linkedin.com/in/oscarnunez34/" color="secondary" style={linkStyle}>
-              <LinkedInIcon />
+              <LinkedInIcon style={{ color: '#0072B1' }} />
             </Link>
             <Link href="https://github.com/oscarnunez1" color="secondary" style={linkStyle}>
-              <GitHubIcon />
+              <GitHubIcon style={{ color: 'black' }} />
             </Link>
           </div>
         </CardContent>
