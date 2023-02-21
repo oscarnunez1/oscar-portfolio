@@ -1,48 +1,58 @@
 import { Link } from "react-router-dom"
+import { AppBar, Toolbar, Typography } from "@mui/material"
 
 function NavBar() {
   return (
-    <nav>
-        <Link 
-            to='/'
+    <AppBar position="static">
+      <Toolbar>
+
+        <Typography 
+          variant="h6" 
+          component={Link} 
+          to="/" 
+          style={{ textDecoration: 'none', color: 'white'}}
         >
-            Oscar Nunez
-        </Link>
+          Oscar Nunez
+        </Typography>
 
-        <ul>
-            <li>
-                <Link
-                    to='/projects'
-                >
-                    Projects
-                </Link>
-            </li>
+        <Typography
+          variant="subtitle1" 
+          component={Link} 
+          to="/projects" 
+          style={{ marginLeft: 'auto', textDecoration: 'none', color: 'white'}}
+        >
+          Projects
+        </Typography>
 
-            <li>
-                <Link
-                    to='/resume'
-                >
-                    Resume
-                </Link>
-            </li>
+        <Typography
+          variant="subtitle1" 
+          component={Link} 
+          to="/resume" 
+          style={{ marginLeft: '1rem', textDecoration: 'none', color: 'white'}}
+        >
+          Resume
+        </Typography>
 
-            <li>
-                <Link
-                    to='/contact'
-                >
-                    Contact
-                </Link>
-            </li>
+        <Typography
+          variant="subtitle1" 
+          component={Link} 
+          to="/contact" 
+          style={{ marginLeft: '1rem', textDecoration: 'none', color: 'white'}}
+        >
+          Contact
+        </Typography>
 
-            <li>
-                <Link
-                    to='/about'
-                >
-                    About
-                </Link>
-            </li>
-        </ul>
-    </nav>
+        <Typography
+          variant="subtitle1" 
+          component={Link} 
+          to="/about" 
+          style={{ marginLeft: '1rem', textDecoration: 'none', color: 'white'}}
+        >
+          About
+        </Typography>
+
+      </Toolbar>  
+    </AppBar>
   )
 }
 
