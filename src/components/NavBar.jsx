@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { AppBar, Toolbar, Button, IconButton, Box } from "@mui/material";
+import { AppBar, Toolbar, Button, IconButton, Box, ButtonGroup } from "@mui/material";
 import { Home } from "@mui/icons-material";
 
 function NavBar() {
@@ -13,69 +13,63 @@ function NavBar() {
         </IconButton>
 
         <Box sx={{ marginLeft: "auto" }}>
-          <Button
-            variant="contained"
-            component={Link}
-            to="/projects"
-            style={{
-              marginLeft: "1rem",
-              textDecoration: "none",
-              color: "white",
-              backgroundColor:
-                location.pathname === "/projects" ? "#E06552" : "transparent",
-            }}
-          >
-            Projects
-          </Button>
+          <ButtonGroup variant="outlined" color="warning">
+            <Button
+              component={Link}
+              to="/projects"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                backgroundColor:
+                  location.pathname === "/projects" ? "#E06552" : "transparent",
+              }}
+            >
+              Projects
+            </Button>
 
-          <Button
-            variant="contained"
-            component={Link}
-            to="/resume"
-            style={{
-              marginLeft: "1rem",
-              textDecoration: "none",
-              color: "white",
-              backgroundColor:
-                location.pathname === "/resume" ? "#E06552" : "transparent",
-            }}
-          >
-            Resume
-          </Button>
+            <Button
+              component={Link}
+              to="/resume"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                backgroundColor:
+                  location.pathname === "/resume" ? "#E06552" : "transparent",
+              }}
+            >
+              Resume
+            </Button>
 
-          <Button
-            variant="contained"
-            component={Link}
-            to="/contact"
-            style={{
-              marginLeft: "1rem",
-              textDecoration: "none",
-              color: "white",
-              backgroundColor:
-                location.pathname === "/contact" ? "#E06552" : "transparent",
-            }}
-          >
-            Contact
-          </Button>
+            <Button
+              component={Link}
+              to="/contact"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                backgroundColor:
+                  location.pathname === "/contact" ? "#E06552" : "transparent",
+              }}
+            >
+              Contact
+            </Button>
 
-          <Button
-            variant="contained"
-            component={Link}
-            to="/about"
-            style={{
-              marginLeft: "1rem",
-              textDecoration: "none",
-              color: "white",
-              backgroundColor:
-                location.pathname === "/about" ? "#E06552" : "transparent",
-            }}
-          >
-            About
-          </Button>
+            <Button
+              component={Link}
+              to="/about"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                backgroundColor:
+                  location.pathname === "/about" ? "#E06552" : "transparent",
+              }}
+            >
+              About
+            </Button>
+          </ButtonGroup>
         </Box>
       </Toolbar>
     </AppBar>
   );
 }
 
-export default NavBar
+export default NavBar;
