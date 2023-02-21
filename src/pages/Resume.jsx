@@ -1,4 +1,4 @@
-import { Typography, Link, Card, CardContent, CardActions, IconButton } from '@mui/material';
+import { Typography, Card, CardContent, CardActions, IconButton } from '@mui/material';
 import { GetApp } from '@mui/icons-material';
 
 function Resume() {
