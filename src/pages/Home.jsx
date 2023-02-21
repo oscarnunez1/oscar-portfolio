@@ -1,13 +1,22 @@
+import React from "react"
+import { Typography, Grid, Paper } from "@mui/material"
+
 function Home() {
   return (
-    <>
-      <h1>Home</h1>
-      <main>
-        <h1>Oscar Nunez</h1>
-        <h2>Full Stack Software Developer</h2>
-        <img src="https://i.imgur.com/VegtFwc.png" alt="Oscar Nunez"/>
-      </main>
-    </>
+    <div>
+      <Grid container spacing={5} direction="column" alignItems="center" justifyContent="center">
+        <Grid item>
+          <Typography variant="h2" component="h1" align="center" style={{ padding: '20px'}}>
+            Full Stack Software Developer
+          </Typography>
+        </Grid>
+        <Grid item>
+          <Paper elevation={16} variant="outlined">
+            <img src="https://i.imgur.com/VegtFwc.png" alt="Oscar Nunez"/>
+          </Paper>
+        </Grid>
+      </Grid>
+    </div>
   )
 }
 
