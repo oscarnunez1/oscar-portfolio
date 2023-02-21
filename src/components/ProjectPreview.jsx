@@ -1,27 +1,31 @@
-import { Link } from "react-router-dom"
-import hyphenateWords from "../utilties/hyphenateWords"
+import { Card, CardMedia, CardContent, Typography, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+import hyphenateWords from '../utilties/hyphenateWords';
 
-function ProjectPreview (props) {
+function ProjectPreview(props) {
   return (
-    <>
-      <div>
-        <section>
-          <div>
-            <img 
-                src={props.project.image} 
-                alt={props.project.title}
-            />
-            <br/>
-            <Link to={hyphenateWords(props.project.title)}>
-              <button>
-                Learn more
-              </button>
-            </Link>
-          </div>
-        </section>
-      </div>
-    </>
-  )
+    <Card>
+      <CardMedia
+        component="img"
+        width="100%"
+        height="300px"
+        image={props.project.image}
+        alt={props.project.title}
+      />
+      <CardContent>
+        <Typography variant="h6" component="h3">
+          {props.project.title}
+        </Typography>
+        <Button
+          variant="contained"
+          component={Link}
+          to={hyphenateWords(props.project.title)}
+        >
+          Learn More
+        </Button>
+      </CardContent>
+    </Card>
+  );
 }
 
-export default ProjectPreview
+export default ProjectPreview;

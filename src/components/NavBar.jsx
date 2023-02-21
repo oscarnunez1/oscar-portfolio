@@ -1,59 +1,81 @@
-import { Link } from "react-router-dom"
-import { AppBar, Toolbar, Typography } from "@mui/material"
+import { Link, useLocation } from "react-router-dom";
+import { AppBar, Toolbar, Button, IconButton, Box } from "@mui/material";
+import { Home } from "@mui/icons-material";
 
 function NavBar() {
+  const location = useLocation();
+
   return (
-    <AppBar position="static">
+    <AppBar position="fixed" style={{ zIndex: 1000, backgroundColor: '#49516F' }}>
       <Toolbar>
+        <IconButton component={Link} to="/" style={{ color: "white" }}>
+          <Home />
+        </IconButton>
 
-        <Typography 
-          variant="h6" 
-          component={Link} 
-          to="/" 
-          style={{ textDecoration: 'none', color: 'white'}}
-        >
-          Oscar Nunez
-        </Typography>
+        <Box sx={{ marginLeft: "auto" }}>
+          <Button
+            variant="contained"
+            component={Link}
+            to="/projects"
+            style={{
+              marginLeft: "1rem",
+              textDecoration: "none",
+              color: "white",
+              backgroundColor:
+                location.pathname === "/projects" ? "#E06552" : "transparent",
+            }}
+          >
+            Projects
+          </Button>
 
-        <Typography
-          variant="subtitle1" 
-          component={Link} 
-          to="/projects" 
-          style={{ marginLeft: 'auto', textDecoration: 'none', color: 'white'}}
-        >
-          Projects
-        </Typography>
+          <Button
+            variant="contained"
+            component={Link}
+            to="/resume"
+            style={{
+              marginLeft: "1rem",
+              textDecoration: "none",
+              color: "white",
+              backgroundColor:
+                location.pathname === "/resume" ? "#E06552" : "transparent",
+            }}
+          >
+            Resume
+          </Button>
 
-        <Typography
-          variant="subtitle1" 
-          component={Link} 
-          to="/resume" 
-          style={{ marginLeft: '1rem', textDecoration: 'none', color: 'white'}}
-        >
-          Resume
-        </Typography>
+          <Button
+            variant="contained"
+            component={Link}
+            to="/contact"
+            style={{
+              marginLeft: "1rem",
+              textDecoration: "none",
+              color: "white",
+              backgroundColor:
+                location.pathname === "/contact" ? "#E06552" : "transparent",
+            }}
+          >
+            Contact
+          </Button>
 
-        <Typography
-          variant="subtitle1" 
-          component={Link} 
-          to="/contact" 
-          style={{ marginLeft: '1rem', textDecoration: 'none', color: 'white'}}
-        >
-          Contact
-        </Typography>
-
-        <Typography
-          variant="subtitle1" 
-          component={Link} 
-          to="/about" 
-          style={{ marginLeft: '1rem', textDecoration: 'none', color: 'white'}}
-        >
-          About
-        </Typography>
-
-      </Toolbar>  
+          <Button
+            variant="contained"
+            component={Link}
+            to="/about"
+            style={{
+              marginLeft: "1rem",
+              textDecoration: "none",
+              color: "white",
+              backgroundColor:
+                location.pathname === "/about" ? "#E06552" : "transparent",
+            }}
+          >
+            About
+          </Button>
+        </Box>
+      </Toolbar>
     </AppBar>
-  )
+  );
 }
 
 export default NavBar

@@ -19,6 +19,13 @@ const projectsData = [
     image: "/images/tic-tac-toe.png",
     repositoryLink: "https://github.com/oscarnunez1/ttt-weekend.git",
     deploymentLink: "https://oscarnunez1-tic-tac-toe.netlify.app/",
+  },
+  {
+    title: "Pix",
+    description: "Pix is a web application with CRUD functionality for music professionals and hobbyists alike. It allows users to ask questions, receive feedback, and connect with others in the industry. The app also serves as a hub for knowledge sharing and provides access to lyrics as quotes.",
+    image: "/images/pix-app.png",
+    repositoryLink: "https://github.com/CaptMerica/pix-front-end",
+    deploymentLink: "https://pix-tritonic.netlify.app/",
   }
 ]
 

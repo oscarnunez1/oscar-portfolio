@@ -12,7 +12,7 @@ function Home() {
         </Grid>
         <Grid item>
           <Paper elevation={16}>
-            <img src="https://i.imgur.com/VegtFwc.png" alt="Oscar Nunez"/>
+            <img id="home-image" src="https://i.imgur.com/VegtFwc.png" alt="Oscar Nunez"/>
           </Paper>
         </Grid>
       </Grid>
