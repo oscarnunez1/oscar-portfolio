@@ -1,4 +1,6 @@
-import './App.css';
+import * as React from 'react'
+import { CssBaseline } from '@mui/material'
+import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -11,7 +13,8 @@ import ProjectDetails from './pages/ProjectDetails'
 
 function App() {
   return (
-    <>
+    <div>
+      <CssBaseline />
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -21,7 +24,7 @@ function App() {
         <Route path='projects' element={<Projects />} />
         <Route path='projects/:projectDetails' element={<ProjectDetails />} />
       </Routes>
-    </>
+    </div>
   )
 }
 

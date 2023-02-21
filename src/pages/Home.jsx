@@ -11,7 +11,7 @@ function Home() {
           </Typography>
         </Grid>
         <Grid item>
-          <Paper elevation={16} variant="outlined">
+          <Paper elevation={16}>
             <img src="https://i.imgur.com/VegtFwc.png" alt="Oscar Nunez"/>
           </Paper>
         </Grid>
