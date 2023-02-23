@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Paper, Card, CardMedia, CardContent } from "@mui/material";
+import { Typography, Grid, Card, CardMedia, CardContent } from "@mui/material";
 
 function Home() {
   return (
